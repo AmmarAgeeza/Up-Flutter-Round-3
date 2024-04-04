@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'flutter_interactive_widgets/login_screen.dart';
+import 'flutter_scrollable_widgets/flutter_scrollable_widgets.dart';
 
 void main() {
   // tests();
@@ -13,10 +13,10 @@ class RootAppWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // print(counter++);
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Up Flutter Round 3',
-      home: LoginScreen(),
+      home: FlutterScrollabeWidgets(),
     );
   }
 }
