@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'flutter_common_widgets/flutter_common_widgets.dart';
 import 'flutter_scrollable_widgets/flutter_scrollable_widgets.dart';
 
 void main() {
@@ -13,10 +14,13 @@ class RootAppWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // print(counter++);
-    return const MaterialApp(
+    return  MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Up Flutter Round 3',
-      home: FlutterScrollabeWidgets(),
+      theme:ThemeData(
+fontFamily: 'Laila',
+      ),
+      home: FlutterCommonWidgets(),
     );
   }
 }
